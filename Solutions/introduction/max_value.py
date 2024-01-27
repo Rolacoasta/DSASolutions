@@ -6,4 +6,3 @@ def max_value(nums):
             maximum = i
 
     return maximum
-#new features!!
