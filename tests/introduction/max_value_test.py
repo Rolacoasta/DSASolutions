@@ -6,6 +6,7 @@ from Solutions.introduction.max_value import max_value
 colorama.init(autoreset=True)
 
 @pytest.mark.introduction
+@pytest.mark.max_value
 def test_00():
     try:
         result = max_value([4, 7, 2, 8, 10, 9])
@@ -15,6 +16,7 @@ def test_00():
         print(Fore.RED + "\nTest Failed: " + str(e))
 
 @pytest.mark.introduction
+@pytest.mark.max_value
 def test_01():
     try:
         result = max_value([10, 5, 40, 40.3])
@@ -24,6 +26,7 @@ def test_01():
         print(Fore.RED + "\nTest Failed: " + str(e))
 
 @pytest.mark.introduction
+@pytest.mark.max_value
 def test_02():
     try:
         result = max_value([-5, -2, -1, -11])
@@ -33,6 +36,7 @@ def test_02():
         print(Fore.RED + "\nTest Failed: " + str(e))
 
 @pytest.mark.introduction
+@pytest.mark.max_value
 def test_03():
     try:
         result = max_value([42])
@@ -42,6 +46,7 @@ def test_03():
         print(Fore.RED + "\nTest Failed: " + str(e))
 
 @pytest.mark.introduction
+@pytest.mark.max_value
 def test_04():
     try:
         result = max_value([1000, 8])
@@ -51,6 +56,7 @@ def test_04():
         print(Fore.RED + "\nTest Failed: " + str(e))
 
 @pytest.mark.introduction
+@pytest.mark.max_value
 def test_05():
     try:
         result = max_value([1000, 8, 9000])
@@ -60,6 +66,7 @@ def test_05():
         print(Fore.RED + "\nTest Failed: " + str(e))
 
 @pytest.mark.introduction
+@pytest.mark.max_value
 def test_06():
     try:
         result = max_value([2, 5, 1, 1, 4])
